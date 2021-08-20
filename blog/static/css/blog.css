@@ -1,0 +1,25 @@
+h1  a, h2 a{
+    color: chocolate;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.page-header{
+    background-color: papayawhip;
+    margin-bottom: 15px;
+    padding: 20px 20px 20px 40px;
+}
+.page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+    color: chocolate;
+    text-decoration: none;
+}
+.post{
+    background-color: darkgray;
+    margin: 15px 15px 15px 15px;
+    padding: 20px 20px 20px 40px;
+}
+.data{
+    color: white;
+}

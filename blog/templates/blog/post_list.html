@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-    <html lang="pl">
-        <head>
-            <meta charset="UTF-8">
-            <title>Blog osobisty Krsystiana</title>
-        </head>
-<body>
-    <div>
-        <h1>Witaj na moim blogu!</h1>
-        <h2>Na tej stronie będą zamieszczane wpisy mojego autrostwa na dowolne tematy.</h2>
-    </div>
-
-    {% for post in posts %}
-        <div>
-            <h2><a href="">{{ post.title }}</a></h2>
+{% extends 'blog/base.html' %}
+{% block content %}
+{% for post in posts %}
+    <div class="post">
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+        <div class="data">
             <p>opublikowany : {{ post.publish_date }}</p>
-            <em>{{ post.text|linebreaksbr }}</em>
         </div>
-    {% endfor %}
-</body>
-</html>
+        <em>{{ post.text|linebreaksbr }}</em>
+    </div>
+{% endfor %}
+{% endblock %}
