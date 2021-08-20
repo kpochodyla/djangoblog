@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog osobisty Krsystiana</title>
-</head>
+    <html lang="pl">
+        <head>
+            <meta charset="UTF-8">
+            <title>Blog osobisty Krsystiana</title>
+        </head>
 <body>
-<h1>Dzień dobry!</h1>
+    <div>
+        <h1>Witaj na moim blogu!</h1>
+        <h2>Na tej stronie będą zamieszczane wpisy mojego autrostwa na dowolne tematy.</h2>
+    </div>
+
+    {% for post in posts %}
+        <div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>opublikowany : {{ post.publish_date }}</p>
+            <em>{{ post.text|linebreaksbr }}</em>
+        </div>
+    {% endfor %}
 </body>
 </html>
