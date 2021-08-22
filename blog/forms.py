@@ -2,6 +2,7 @@ from django import forms
 from .models import Post
 
 
-class ImgForm(forms.ModelForm):
-    model = Post
-    fields = ['image']
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title', 'text', 'image']

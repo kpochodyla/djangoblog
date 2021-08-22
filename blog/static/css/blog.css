@@ -4,6 +4,7 @@ h1  a, h2 a{
 
 body{
     font-family: 'Roboto Mono', monospace;
+    word-wrap:anywhere;
 }
 
 .page-header{
@@ -19,6 +20,7 @@ body{
     background-color: darkgray;
     margin: 15px 15px 15px 15px;
     padding: 20px 20px 20px 40px;
+    word-wrap:anywhere;
 }
 .data{
     color: white;
