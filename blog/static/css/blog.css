@@ -1,7 +1,3 @@
-body{
-    font-family: 'Roboto Mono', monospace;
-    word-wrap:anywhere;
-}
 
 .page-header{
     background-color: white;
@@ -89,7 +85,7 @@ body{
     text-decoration: none;
 }
 
-h2{
+.h2{
     font-family: 'Intern', sans-serif;
 }
 
